@@ -1,11 +1,11 @@
-package com.example.testwithapi.viewmodel
+package com.example.weatherapp.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.testwithapi.network.WeatherApi
+import com.example.weatherapp.network.WeatherApi
 import kotlinx.coroutines.launch
 
 class WeatherViewModel : ViewModel() {
@@ -13,10 +13,10 @@ class WeatherViewModel : ViewModel() {
 
     val status: LiveData<String> = _status
 
-//    //WORKS
-//    init {
-//        getWeatherData()
-//    }
+    //    //WORKS
+    init {
+        getWeatherData()
+    }
 
     private fun getWeatherData() {
         viewModelScope.launch {

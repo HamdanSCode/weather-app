@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.testwithapi'
+    namespace 'com.example.weatherapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.testwithapi"
+        applicationId "com.example.weatherapp"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -47,7 +47,6 @@ android {
 }
 
 dependencies {
-
     implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
 
     // Retrofit with Moshi Converter

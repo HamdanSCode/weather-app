@@ -1,4 +1,4 @@
-package com.example.testwithapi.network
+package com.example.weatherapp.network
 
 import android.util.Log
 import com.squareup.moshi.Moshi
